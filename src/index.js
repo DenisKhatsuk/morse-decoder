@@ -37,41 +37,6 @@ const MORSE_TABLE = {
     '-----':  '0',
 };
 
-// function code(expr) {
-//     expr = expr.toLowerCase();
-//     let exprArr = expr.split('');
-//     let codedStr = '';
-//     for (let i = 0; i < exprArr.length; i++) {
-//         for (let key in MORSE_TABLE) {
-//             if (exprArr[i] == MORSE_TABLE[key]) {
-//                 let char = key.split('');
-//                 let charCoded = '';
-//                 for (let i=0; i < char.length; i++) {
-//                 	switch (char[i]) {
-//                   	case '.':
-//                     	charCoded += '10';
-//                       break;
-//                     case '-':
-//                     	charCoded += '11';
-//                       break;
-//                   	default:
-//                     	break;
-//                   }
-//                 }
-//                 while (charCoded.length < 10) {
-//                  charCoded = '0' + charCoded;
-//                 }
-//                 codedStr += charCoded;
-//                 break;
-//             } else if (exprArr[i] == ' ') {
-//             	codedStr += '**********';
-//               break;
-//             }
-//         }
-//     }
-//     return codedStr;
-// }
-
 function decode(expr) {
     let amountOfLetters = expr.length / 10;
     let startPoint = 0;
